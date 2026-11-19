@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-shorts-maker-pro
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
